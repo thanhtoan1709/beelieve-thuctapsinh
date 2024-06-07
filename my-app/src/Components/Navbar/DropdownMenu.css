@@ -1,0 +1,21 @@
+.dr0pd0wn-m3nu {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dr0pd0wn-1tem {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dr0pd0wn-1tem:hover {
+    background-color: #f0f0f0;
+  }

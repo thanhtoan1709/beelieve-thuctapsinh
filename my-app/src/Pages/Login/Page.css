@@ -1,0 +1,337 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+.container-login {
+    width: 30%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 3% 4% 5% 35%;
+}
+
+.container-login .notification-text {    
+    line-height: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.header-1 .text {
+    padding: 5px;    
+    font-size: 30px;    
+}
+
+.signup-google {
+    max-width: 100%;
+    background-color: rgb(127, 161, 248);
+    color: rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.signup-google:hover {
+    background-color: hsl(223, 90%, 64%);
+}
+
+.signup-facebook {
+    max-width: 100%;
+    background-color: rgb(7, 133, 249);
+    color: rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.signup-facebook:hover {
+    background-color: hsl(209, 95%, 40%);
+}
+
+.signup-mobile {
+    max-width: 100%;
+    background-color: rgb(217, 217, 217);
+    color: rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.signup-mobile:hover {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.signup-email {
+    max-width: 100%;
+    background-color: rgb(255, 193, 7);
+    color: rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.signup-email:hover {
+    background-color: hsl(45, 100%, 41%);
+}
+
+.Choice {
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;      
+}
+
+.Choice a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    padding: .25rem;
+}
+
+.TOF a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    padding: .25rem;
+    color: rgb(0, 122, 190);
+}
+
+.TOF a:hover {
+    color: hsl(201, 100%, 27%);
+}
+
+.Choice .text {
+    font-weight:  bold;
+    gap: 5px;
+    margin: 20px;
+    
+}
+
+
+.google-img {
+    width: 35px;
+  cursor: pointer;
+  /* margin-right: 79rem; */
+  float: left;
+}
+
+.facebook-img {
+    width: 35px;
+  cursor: pointer;
+  /* margin-left: 79rem; */
+  float: left;
+}
+
+.mobile-img {
+    width: 35px;
+  cursor: pointer;
+  /* margin-left: 79rem; */
+  float: left;
+}
+
+.mail-img {
+    width: 35px;
+  cursor: pointer;
+  /* margin-left: 79rem; */
+  float: left;
+}
+
+.have-account {
+    padding-bottom: 15px;
+}
+
+.have-account a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    padding: .25rem;
+    color: rgb(0, 122, 190);
+}
+
+.have-account a:hover {
+    color: hsl(201, 100%, 27%);
+}
+
+
+.back {
+    margin-left: 70%;
+    margin-bottom: 5%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.number-field {
+    max-width: 10%;    
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;        
+    gap: 5px;
+    padding: 0 20%;    
+    
+    position: relative;
+}
+
+.number-field .text {    
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid;
+    font-size: 20px;    
+    
+}
+
+ .input-text {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);
+    color: #333;
+    font-size: 16px;
+    max-width: 220px;    
+}
+
+.input .input-number{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);
+    color: #333;
+    font-size: 16px;
+    width: 50%;
+}
+
+.Login-Button {    
+   border: 1px solid;
+   border-radius: 20px;
+   padding: 12px;
+   width: 45%;
+   margin-top: 4%;
+   margin-left: -1%;
+   background-color: #37E93E;
+   cursor: pointer;
+   outline: none;
+}
+
+.Login-Button:hover {    
+    background-color: hwb(122 22% 19%);
+}
+
+.Login-Button-number:hover {    
+    background-color: hwb(122 22% 19%);
+}
+
+.Login-Button-number {    
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%;
+    margin-top: 4%;
+    margin-left: 27%;
+    background-color: #37E93E;
+    cursor: pointer;
+    outline: none;
+ }
+
+.Back-Button {   
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 27%;
+    margin-bottom: 30px;
+    cursor: pointer;   
+}
+
+.Back-Button:hover {    
+    background-color: hwb(0 100% 10%);
+}
+
+.logo-img {          
+    max-width: 150px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+.emailpassword {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-title {
+    margin-right: 33%;
+    margin-bottom: 0;
+}
+
+.password-title {    
+    margin-right: 28%;
+    margin-bottom: 0;
+}
+
+.form_login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_form_text-register {
+font-size: 16px;
+font-weight: 500;
+margin: 10px 20px;
+}
+
+.register_form_register {
+color: #007bff;
+text-decoration: none;
+margin-left: 20px;
+}
+
+.register_form_register:hover {
+text-decoration: underline;
+color: aliceblue;
+}

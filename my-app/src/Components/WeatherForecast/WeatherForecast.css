@@ -1,0 +1,48 @@
+
+.weather-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;    
+  }
+  
+  .weather-item {
+    flex: 1;
+    /* margin: 15px 40px; */
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+  }
+  
+  .weather-item p {
+    white-space: pre-line; /* Xuống dòng dựa trên dấu xuống dòng trong văn bản */
+    margin-top: -5px;
+  }
+  
+  .location {
+    margin-top: 14px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .weather-date {    
+    flex: 1;
+    margin: 0 -20px;
+    padding: 10px;
+    border: 1px solid #ffffff;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .weather-date h2 {
+    margin-top: 14px;
+    margin-left: 0px;
+    font-size: 35px;
+  }
+
+  .weather-date p {
+    white-space: pre-line;
+    font-size: 30px;
+    margin-top: -20px;
+  }

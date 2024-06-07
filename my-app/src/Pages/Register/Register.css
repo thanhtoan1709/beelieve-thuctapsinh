@@ -1,0 +1,103 @@
+
+/* RegisterForm.css */
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 610px;
+    margin: 2%;
+  }
+  
+  .register-container {
+    display: flex;
+    background: #fff;
+    width: 40%;
+    
+    height: 100%;
+
+  }
+  
+  .register__form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    border: 1.5px solid #dcdcdc;
+    margin-bottom: auto;
+    flex-direction: column;
+  }
+  
+  .register__form__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .register__form__field {
+    margin-bottom: 20px;
+  }
+  
+  .register__form__label {
+    font-weight: bold;
+  }
+  
+  .register__form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .register__form__input:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .register__form__input:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .register__btn__submit {
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  .register__form__submit {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .register__form__submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .from__login {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .register__form__text-register {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 20px;
+  }
+  
+  .register__form__register {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .register__form__register:hover {
+    text-decoration: underline;
+    color: aliceblue;
+  }

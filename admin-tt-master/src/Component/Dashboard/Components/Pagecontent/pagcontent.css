@@ -1,0 +1,6 @@
+ .page-content {
+    background-color: rgb(208, 56, 56);
+    color: white;
+    font-size: larger;
+    height: 100vh; /* Ensure the sidebar spans the full height of the viewport */
+  }

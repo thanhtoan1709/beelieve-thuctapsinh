@@ -9,7 +9,7 @@ const router = express.Router();
 router.get("/", verifyToken, controllers.getCurrent);
 
 router.get("/get-all", controllers.getAlluser);
-
+router.put("/", controllers.updateUserController);
 router.delete("/:id", controllers.dellUser);
 
 module.exports = router;

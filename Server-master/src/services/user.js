@@ -61,3 +61,19 @@ export const delUser = (userID) =>
       reject(error);
     }
   });
+
+export const updateUser = ({ id, ...body }) =>
+  new Promise(async (resolve, reject) => {
+    try {
+      const response = await db.User.update(body, { where: { id } });
+      resolve({
+        err: response[0] > 0 ? 0 : 1,
+        mess:
+          response[0] > 0 ? `${response[0]} user update` : "can't update User",
+      });
+      return resolve({ err: 0, mess: "User updated successfully" });
+    } catch (error) {
+      console.error("Error in updateUser service:", error);
+      reject(error);
+    }
+  });

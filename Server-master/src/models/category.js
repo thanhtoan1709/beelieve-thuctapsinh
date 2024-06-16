@@ -14,6 +14,11 @@ module.exports = (sequelize, DataTypes) => {
         targetKey: "codevalue_cat",
         as: "category&sub_cate_Data",
       });
+      Category.hasMany(models.Products, {
+        foreignKey: "sub_cat", // Cột trong bảng Products dùng làm khóa phụ
+        sourceKey: "code_Cate", // Cột trong bảng Categories dùng làm khóa chính
+        as: "productsData",
+      });
     }
   }
   Category.init(

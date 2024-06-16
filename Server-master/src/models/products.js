@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Products.belongsTo(models.Category, {
-        foreignKey: "code_cat",
-        targetKey: "code_Cate",
+        foreignKey: "sub_cat", // Cột trong bảng Products dùng làm khóa phụ
+        targetKey: "code_Cate", // Cột trong bảng Categories dùng làm khóa chính
         as: "categoryData",
       });
     }

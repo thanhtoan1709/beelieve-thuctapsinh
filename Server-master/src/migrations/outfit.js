@@ -2,45 +2,50 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("Products", {
-      stt: {
-        primaryKey: true,
+    await queryInterface.createTable("Outfits", {
+      id: {
+        allowNull: false,
         autoIncrement: true,
+        primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      id_pr: {
+      outfitName: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
-      productName: {
+      topProductId: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
-      code_cat: {
+      bottomProductId: {
         type: Sequelize.STRING,
+
+        allowNull: false,
       },
-      sub_cat: {
-        type: Sequelize.STRING,
-      },
-      goWhere: { type: Sequelize.STRING },
-      styleFilter: { type: Sequelize.STRING },
-      eventFilter: { type: Sequelize.STRING },
-      imageProduct: { type: Sequelize.STRING },
-      pricesaleProduct: {
+
+      priceOProduct: {
         type: Sequelize.INTEGER,
+        allowNull: false,
       },
-      priceProduct: {
-        type: Sequelize.INTEGER,
-      },
-      descriptionProduct: {
+      goWhere: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
-      productColor: {
+      styleFilter: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
-      size: {
+      eventFilter: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
-      soluong: {
-        type: Sequelize.INTEGER,
+      imageOProduct: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      descriptionOProduct: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,
@@ -53,6 +58,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("Products");
+    await queryInterface.dropTable("Outfits");
   },
 };

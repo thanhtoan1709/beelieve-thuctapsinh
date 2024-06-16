@@ -110,7 +110,6 @@ export const delProduct = async (req, res) => {
 //   }
 // };
 
-
 export const getAllproduct = async (req, res) => {
   try {
     const PAGE_SIZE = 12; // Số lượng sản phẩm trên mỗi trang
@@ -126,8 +125,10 @@ export const getAllproduct = async (req, res) => {
       totalPages,
     });
   } catch (error) {
-    console.error('Error fetching products:', error); // Ghi log lỗi chi tiết
-    return res.status(500).json({ message: 'Internal Server Error', error: error.message });
+    console.error("Error fetching products:", error); // Ghi log lỗi chi tiết
+    return res
+      .status(500)
+      .json({ message: "Internal Server Error", error: error.message });
   }
 };
 
